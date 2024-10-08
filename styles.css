@@ -1,0 +1,142 @@
+/* Header Styles */
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s ease-in-out;
+}
+
+header nav a:hover {
+    color: #ccc;
+}
+
+/*body Styles */
+
+body {
+  /* initial background color */
+  background-color: rgba(126, 4, 176, 0.53);
+  /* gradient background */
+  background-image: linear-gradient(to bottom, #81bfe0, #333);
+  background-size: 100% 100%; /* adjust the height to your needs */
+  background-position: 0% 100%; /* start at the bottom */
+  transition: background-position 0.5s; /* smooth transition */
+}
+
+/* main section */
+
+
+
+/* Contact Styles */
+
+.contact {
+    background-color: #7db3e0;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: block;
+}
+
+.contact-info input[type="text"] {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* About Styles */
+
+.about {
+    background-color: rgba(126, 4, 176, 0.53);
+  /* gradient background */
+  background-image: linear-gradient(to bottom, #81bfe0, #333);
+    padding: 40px;
+    text-align: center;
+}
+
+.about h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.about img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/*google map */
+
+.google-map {
+     /*padding-bottom: 50%;*/
+     position: relative;
+     padding: 10px;
+     width: 100%;
+     height: 600px;
+     border: 1px solid #ddd;
+     border-radius: 10px;
+}
+
+.google-map iframe {
+     height: 100%;
+     width: 100%;
+     left: 0;
+     top: 0;
+     position: absolute;
+}
+
+
+/*Footer styles*/
+footer {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
