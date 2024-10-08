@@ -33,24 +33,83 @@ header nav a:hover {
 
 body {
   /* initial background color */
-  background-color: rgba(126, 4, 176, 0.53);
+  /*background-color: rgba(255, 255, 255, 0.53);*/
   /* gradient background */
-  background-image: linear-gradient(to bottom, #81bfe0, #333);
+  background-image: linear-gradient(to bottom, #fcfafa, #86c8e9);
   background-size: 100% 100%; /* adjust the height to your needs */
   background-position: 0% 100%; /* start at the bottom */
   transition: background-position 0.5s; /* smooth transition */
+    
 }
 
 /* main section */
 
 
+/*whyboxcard*/
+.whyBoxCard{
+    font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+
+  /* Add some padding and border radius */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+
+  /* Add a nice background color and text color */
+  background-color: #86a9b3; /* A nice green color */
+  color: #efebeb;
+
+  /* Add some hover effects */
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+/*button */
+
+button {
+  /* Add some nice font styles */
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+
+  /* Add some padding and border radius */
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+
+  /* Add a nice background color and text color */
+  background-color: #34A853; /* A nice green color */
+  color: #efebeb;
+
+  /* Add some hover effects */
+  cursor: pointer;
+  transition: background-color 0.2s ease-out;
+}
+
+button:hover {
+  background-color: #2F7A4F; /* A darker green color on hover */
+}
+
+button:active {
+  background-color: #2F7A4F; /* A darker green color on click */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
 
 /* Contact Styles */
 
 .contact {
     background-color: #7db3e0;
+  background-image: linear-gradient(to bottom, #fcfafa, #86c8e9);
     padding: 40px;
     text-align: center;
+           min-height: 100vh;
+
+
+}
+
+
+.h_5{
+    font-size: 20px;
 }
 
 .contact h1 {
@@ -66,7 +125,13 @@ body {
 }
 
 .contact-info {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+}
+.picture{
+    display:flex;
+    justify-content: space-between;
+    
 }
 
 .contact-info input[type="text"] {
@@ -82,9 +147,16 @@ body {
 .about {
     background-color: rgba(126, 4, 176, 0.53);
   /* gradient background */
-  background-image: linear-gradient(to bottom, #81bfe0, #333);
+  background-image: linear-gradient(to bottom, #fcfafa, #86c8e9);
+    color: #0e0e0e;
     padding: 40px;
     text-align: center;
+    min-height: 100vh;
+}
+
+.aboutContainer {
+    background-color: #86a9b3;
+
 }
 
 .about h1 {
@@ -95,7 +167,7 @@ body {
 
 .about p {
     font-size: 18px;
-    color: #666;
+   color: #ffffff;
     margin-bottom: 40px;
 }
 
@@ -107,16 +179,42 @@ body {
     margin-bottom: 20px;
 }
 
+
+/*input*/
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+
 /*google map */
 
 .google-map {
      /*padding-bottom: 50%;*/
      position: relative;
+     margin-right: auto;
+    margin-left: auto;
      padding: 10px;
-     width: 100%;
+     width: 90%;
      height: 600px;
      border: 1px solid #ddd;
      border-radius: 10px;
+}
+.maps-container{
+    align-content: center;
 }
 
 .google-map iframe {
